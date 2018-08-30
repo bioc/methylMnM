@@ -61,9 +61,10 @@ R
 packages, which can be done using the following commands. 
 
 <<echo=TRUE, eval=F>>=
-source("http://bioconductor.org/biocLite.R")
-biocLite("edgeR")
-biocLite("statmod")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("edgeR")
+BiocManager::install("statmod")
 library(edgeR)
 library(statmod)
 @
@@ -72,8 +73,9 @@ environment, start R and enter:
 
 
 <<echo=TRUE, eval=F>>=
-source("http://bioconductor.org/biocLite.R")
-biocLite("methylMnM")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("methylMnM")
 @
 
  Then, the methylMnM package is ready to load.
