@@ -1,7 +1,7 @@
 Package: methylMnM
 Type: Package
 Title: detect different methylation level (DMR)
-Version: 1.41.0
+Version: 1.42.0
 Date: 2013-04-08
 Author: Yan Zhou, Bo Zhang, Nan Lin, BaoXue Zhang and Ting Wang
 Maintainer: Yan Zhou<zhouy1016@163.com>
